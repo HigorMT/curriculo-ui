@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higor Marino Torres - Desenvolvedor Full-Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HMT</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Formação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name">
+                        <span class="highlight">Higor</span> Marino Torres
+                    </h1>
+                    <div class="hero-title">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="hero-tags">
+                        <span class="tag">#Java</span>
+                        <span class="tag">#Kotlin</span>
+                        <span class="tag">#Angular</span>
+                        <span class="tag">#React</span>
+                        <span class="tag">#Next</span>
+                    </div>
+                    <div class="hero-contact">
+                        <a href="tel:+5565998030224" class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            (65) 99803-0224
+                        </a>
+                        <a href="mailto:Higor.marino@hotmail.com" class="contact-btn">
+                            <i class="fas fa-envelope"></i>
+                            Higor.marino@hotmail.com
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://linkedin.com/in/higormarino" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/HigorMT" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="./docs/Curriculo%20-%20Higor%20Marino%20Torres%20-%20Desenvolvedor.pdf" class="social-btn">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <img src="./imgs/foto-perfil.png" alt="foto perfil" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Desenvolvedor full-stack com experiência desde 2021, atuando principalmente com Java, Kotlin, Angular e Spring. 
+                        Tenho um histórico diversificado de participação em projetos, incluindo sistemas de gerenciamento de recursos, 
+                        compra e venda de ouro, contabilidade para cooperativas, regularização de terras, cadastramento de produtos, 
+                        tributação e controle de sessões jurídicas.
+                    </p>
+                    <p>
+                        Além disso, colaborei em sistemas voltados para gestão de servidores e metas em órgãos governamentais, 
+                        bem como no desenvolvimento de soluções para saneamento.
+                    </p>
+                    <p>
+                        Meu contato com a área de desenvolvimento começou em 2014, e desde então, venho aprimorando continuamente 
+                        minhas habilidades com diversas tecnologias e arquiteturas.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Tecnologias</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projetos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Tecnologias</h2>
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="database">Database</button>
+                <button class="filter-btn" data-filter="tools">Ferramentas</button>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Kotlin</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Spring Boot</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Hibernate</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="82"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C++</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3>C#</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="70"></div>
+                    </div>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <h3>Angular</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <h3>Next.js</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="82"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="85"></div>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon">
+                        <i class="fas fa-elephant"></i>
+                    </div>
+                    <h3>PostgreSQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Firebird</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Oracle</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="78"></div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="72"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Gradle</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maven</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="78"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>JUnit</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>RabbitMQ</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="70"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Atual</div>
+                        <h3>Desenvolvedor Full-Stack</h3>
+                        <h4>Wmd Sistemas</h4>
+                        <p>Desenvolvimento de sistemas corporativos utilizando Java, Spring Boot, Angular e React. Participação em projetos de grande escala com foco em performance e escalabilidade.</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Java</span>
+                            <span class="timeline-tag">Spring Boot</span>
+                            <span class="timeline-tag">Angular</span>
+                            <span class="timeline-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2023</div>
+                        <h3>Desenvolvedor Full-Stack</h3>
+                        <h4>GetInfo</h4>
+                        <p>Desenvolvimento de soluções para gestão de recursos, sistemas de compra e venda de ouro, e aplicações para cooperativas. Trabalho com tecnologias Java, Kotlin e frameworks modernos.</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Java</span>
+                            <span class="timeline-tag">Kotlin</span>
+                            <span class="timeline-tag">MySQL</span>
+                            <span class="timeline-tag">Angular</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2023</div>
+                        <h3>Desenvolvedor Full-Stack</h3>
+                        <h4>Rocket IT</h4>
+                        <p>Desenvolvimento de sistemas para regularização de terras, cadastramento de produtos e controle de sessões jurídicas. Foco em soluções governamentais e de saneamento.</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Java</span>
+                            <span class="timeline-tag">Spring</span>
+                            <span class="timeline-tag">PostgreSQL</span>
+                            <span class="timeline-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017 - 2021</div>
+                        <h3>Desenvolvedor</h3>
+                        <h4>Início da Carreira</h4>
+                        <p>Primeiros passos na área de desenvolvimento, aprendendo as bases da programação e participando de projetos diversos para ganhar experiência prática.</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Java</span>
+                            <span class="timeline-tag">HTML/CSS</span>
+                            <span class="timeline-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Formação</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Engenharia de Controle e Automação</h3>
+                    <p class="education-institution">Universidade</p>
+                    <p class="education-description">
+                        Formação em engenharia com foco em sistemas de controle, automação industrial e programação de sistemas embarcados.
+                    </p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Técnico em Informática</h3>
+                    <p class="education-institution">2014 - 2016</p>
+                    <p class="education-description">
+                        Formação técnica em informática com base sólida em programação, redes de computadores e desenvolvimento de sistemas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Cursos & Certificações</h2>
+            <div class="courses-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="algaworks">AlgaWorks</button>
+                <button class="filter-btn" data-filter="udemy">Udemy</button>
+                <button class="filter-btn" data-filter="em-andamento">Em Andamento</button>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" data-category="algaworks em-andamento">
+                    <div class="course-header">
+                        <h3>Especialista Java</h3>
+                        <span class="course-status in-progress">Em Andamento</span>
+                    </div>
+                    <p class="course-institution">AlgaWorks</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="75"></div>
+                        </div>
+                        <span class="progress-text">280hrs</span>
+                    </div>
+                </div>
+                <div class="course-card" data-category="algaworks em-andamento">
+                    <div class="course-header">
+                        <h3>Especialista React</h3>
+                        <span class="course-status in-progress">Em Andamento</span>
+                    </div>
+                    <p class="course-institution">AlgaWorks</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="60"></div>
+                        </div>
+                        <span class="progress-text">260hrs</span>
+                    </div>
+                </div>
+                <div class="course-card" data-category="algaworks">
+                    <div class="course-header">
+                        <h3>Especialista JPA</h3>
+                        <span class="course-status completed">Concluído</span>
+                    </div>
+                    <p class="course-institution">AlgaWorks</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="100"></div>
+                        </div>
+                        <span class="progress-text">100hrs</span>
+                    </div>
+                </div>
+                <div class="course-card" data-category="algaworks">
+                    <div class="course-header">
+                        <h3>Java</h3>
+                        <span class="course-status completed">Concluído</span>
+                    </div>
+                    <p class="course-institution">AlgaWorks</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="100"></div>
+                        </div>
+                        <span class="progress-text">60hrs</span>
+                    </div>
+                </div>
+                <div class="course-card" data-category="algaworks">
+                    <div class="course-header">
+                        <h3>Testes Unitários com JUnit</h3>
+                        <span class="course-status completed">Concluído</span>
+                    </div>
+                    <p class="course-institution">AlgaWorks</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="100"></div>
+                        </div>
+                        <span class="progress-text">36hrs</span>
+                    </div>
+                </div>
+                <div class="course-card" data-category="algaworks">
+                    <div class="course-header">
+                        <h3>Web Design Responsivo com HTML5, CSS3 e BEM</h3>
+                        <span class="course-status completed">Concluído</span>
+                    </div>
+                    <p class="course-institution">AlgaWorks</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="100"></div>
+                        </div>
+                        <span class="progress-text">32hrs</span>
+                    </div>
+                </div>
+                <div class="course-card" data-category="algaworks">
+                    <div class="course-header">
+                        <h3>JavaScript</h3>
+                        <span class="course-status completed">Concluído</span>
+                    </div>
+                    <p class="course-institution">AlgaWorks</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="100"></div>
+                        </div>
+                        <span class="progress-text">24hrs</span>
+                    </div>
+                </div>
+                <div class="course-card" data-category="udemy">
+                    <div class="course-header">
+                        <h3>Formação Angular 13</h3>
+                        <span class="course-status completed">Concluído</span>
+                    </div>
+                    <p class="course-institution">Udemy</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="100"></div>
+                        </div>
+                        <span class="progress-text">12.5hrs</span>
+                    </div>
+                </div>
+                <div class="course-card" data-category="udemy">
+                    <div class="course-header">
+                        <h3>Kotlin e Spring do zero ao Avançado</h3>
+                        <span class="course-status completed">Concluído</span>
+                    </div>
+                    <p class="course-institution">Udemy</p>
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="100"></div>
+                        </div>
+                        <span class="progress-text">11hrs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefone</h3>
+                            <p>(65) 99803-0224</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Higor.marino@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/higormarino</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>github.com/HigorMT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <h3>Pronto para o próximo projeto?</h3>
+                    <p>Estou sempre aberto a discutir novas oportunidades e projetos interessantes.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:Higor.marino@hotmail.com" class="cta-btn primary">
+                            <i class="fas fa-envelope"></i>
+                            Enviar Email
+                        </a>
+                        <a href="https://linkedin.com/in/higormarino" target="_blank" class="cta-btn secondary">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Higor Marino Torres. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/higormarino" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/HigorMT" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
