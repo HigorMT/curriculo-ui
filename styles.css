@@ -373,9 +373,9 @@ section {
     border-radius: 2px;
 }
 
-/* About Section */
 .about {
     background: var(--bg-secondary);
+    margin-top: 308px;
 }
 
 .about-content {
@@ -1004,6 +1004,7 @@ section {
     }
 
     .image-placeholder {
+        margin-top: 50px;
         width: 200px;
         height: 200px;
         font-size: 4rem;
